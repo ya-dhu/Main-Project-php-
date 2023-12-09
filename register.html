@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for character set and viewport settings -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title of the HTML document -->
+    <title>User Registration</title>
+
+    <!-- Linking external stylesheet for styling -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<!-- Heading for the registration form -->
+<h1>Register</h1>
+
+<!-- User registration form -->
+<form action="../process/create_post.php" method="post" enctype="multipart/form-data" class="form-signup">
+    <!-- Input field for first name -->
+    <label for="first_name">First Name:</label>
+    <input type="text" id="first_name" name="first_name" required>
+
+    <!-- Input field for last name -->
+    <label for="last_name">Last Name:</label>
+    <input type="text" id="last_name" name="last_name" required>
+
+    <!-- Input field for email -->
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <!-- Input field for password -->
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+
+    <!-- Input field for confirming password -->
+    <label for="confirm_password">Confirm Password:</label>
+    <input type="password" id="confirm_password" name="confirm_password" required>
+
+    <!-- Input field for uploading profile picture -->
+    <label for="profile_picture">Profile Picture:</label>
+    <input type="file" id="profile_picture" name="profile_picture" accept="image/*" required>
+
+    <!-- Button to submit the registration form -->
+    <button type="submit" class="btn btn-primary">Register</button>
+</form>
+
+</body>
+</html>

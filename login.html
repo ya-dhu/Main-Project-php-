@@ -1,0 +1,33 @@
+<!-- pages/login.php -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for character set and viewport settings -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Linking external stylesheet for styling -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Title of the HTML document -->
+    <title>Login</title>
+</head>
+<body>
+
+<!-- User login form -->
+<form action="../process/auth.php" method="post">
+    <!-- Input field for username -->
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required>
+
+    <!-- Input field for password -->
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+
+    <!-- Button to submit the login form -->
+    <button type="submit">Login</button>
+</form>
+
+</body>
+</html>
